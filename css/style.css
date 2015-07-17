@@ -3818,12 +3818,118 @@ body {
 
 
 /*DESIGN OFFICE - Haufe Group Style - Oriented @ goodlooking.haufe.de*/
+
+/*FONTS*/
+
+/* Webfont: HaufeMerriweather */@font-face {
+    font-family: 'HaufeMerriweather';
+    src: url('fonts/HaufeMerriweather.eot'); /* IE9 Compat Modes */
+    src: url('fonts/HaufeMerriweather.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/HaufeMerriweather.woff') format('woff'), /* Modern Browsers */
+         url('fonts/HaufeMerriweather.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/HaufeMerriweather.svg#HaufeMerriweather') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.haufemerriweather {font-family: 'HaufeMerriweather'; font-weight: normal;}
+ 
+ 
+/* Webfont: HaufeMerriweather-Bold */@font-face {
+    font-family: 'HaufeMerriweather';
+    src: url('fonts/HaufeMerriweather-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/HaufeMerriweather-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/HaufeMerriweather-Bold.woff') format('woff'), /* Modern Browsers */
+         url('fonts/HaufeMerriweather-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/HaufeMerriweather-Bold.svg#HaufeMerriweather-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+.haufemerriweatherbold { font-family: 'HaufeMerriweather'; font-weight: bold;}
+ 
+ 
+/* Webfont: HaufeMerriweather-BoldItalic */@font-face {
+    font-family: 'HaufeMerriweather';
+    src: url('fonts/HaufeMerriweather-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/HaufeMerriweather-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/HaufeMerriweather-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('fonts/HaufeMerriweather-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/HaufeMerriweather-BoldItalic.svg#HaufeMerriweather-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+.haufemerriweatherbolditalic { font-family: 'HaufeMerriweather';   font-style: italic;
+    font-weight: bold;}
+ 
+ 
+/* Webfont: HaufeMerriweather-Italic */@font-face {
+    font-family: 'HaufeMerriweather';
+    src: url('fonts/HaufeMerriweather-Italic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/HaufeMerriweather-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/HaufeMerriweather-Italic.woff') format('woff'), /* Modern Browsers */
+         url('fonts/HaufeMerriweather-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/HaufeMerriweather-Italic.svg#HaufeMerriweather-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+ .haufemerriweatheritalic {    font-family: 'HaufeMerriweather';    font-style: italic;
+    font-weight: normal;
+
+ }
+ 
+ /* Webfont: HaufeMerriweatherSans */@font-face {
+    font-family: 'HaufeMerriweatherSans';
+    src: url('fonts/HaufeMerriweatherSans.eot'); /* IE9 Compat Modes */
+    src: url('fonts/HaufeMerriweatherSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/HaufeMerriweatherSans.woff') format('woff'), /* Modern Browsers */
+         url('fonts/HaufeMerriweatherSans.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/HaufeMerriweatherSans.svg#HaufeMerriweatherSans') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+.haufemerriweathersans {  font-family: 'HaufeMerriweatherSans';    font-style: normal;
+    font-weight: normal;}
+	
+/* Webfont: HaufeMerriweatherSans-Bold */@font-face {
+    font-family: 'HaufeMerriweatherSans';
+    src: url('fonts/HaufeMerriweatherSans-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/HaufeMerriweatherSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/HaufeMerriweatherSans-Bold.woff') format('woff'), /* Modern Browsers */
+         url('fonts/HaufeMerriweatherSans-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/HaufeMerriweatherSans-Bold.svg#HaufeMerriweatherSans-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+	.haufemerriweathersansbold {  font-family: 'HaufeMerriweatherSans';    font-style: normal;
+    font-weight: bold;}
+	
+	
+	body {font-family: 'HaufeMerriweather';     font-style: normal;
+    font-weight: normal; }
+	
+	h1, h2, h3, h4, h5, h6 {font-family: 'HaufeMerriweatherSans';     font-style: normal;
+    font-weight: bold;}
+	
+	.button, .button.boxed  {font-family: 'HaufeMerriweatherSans';     font-style: normal;
+    font-weight: normal;}
+
+ /*ELEMENTS*/
+
 .button {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
   background: #EB6005;
-  
+  border:none;
 }
 
 .button:hover {
