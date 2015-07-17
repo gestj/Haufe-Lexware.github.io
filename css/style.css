@@ -1475,7 +1475,7 @@ form input.error, form textarea.error {
   font-size: 2.5rem;
 }
 .modBlogPost.big h3 a {
-  color: #333;
+  color: #33332E;
 }
 .modBlogPost.big h3 a:hover {
   color: #f9ce06;
@@ -2510,8 +2510,10 @@ form input.error, form textarea.error {
   color: #fff;
   letter-spacing: 2px;
   font-weight: bold;
-  margin-bottom: 40px;
+  padding: 0.8rem;
+  /*margin-bottom: 40px;*/
   text-transform: uppercase;
+  background-color: #005DA5;
 }
 .modDefaultSlider .sequence .small-title h2 {
   font-size: 1.28571rem;
@@ -3922,15 +3924,15 @@ body {
 	.button, .button.boxed, nav, .top-bar-section ul li > a  {font-family: 'HaufeMerriweatherSans', sans-serif;     font-style: normal;
     font-weight: normal;}
 	
-	a, .modBlogPost.big h3 a:hover, .top-bar-section ul li > a  {color: #005DA5; /*haufe blue*/}
+	a, .modBlogPost.big h3 a:hover  {color: #005DA5; /*haufe blue*/}
+	.top-bar-section ul li > a {color: #33332E /*black*/}
+	.top-bar-section li.active:not(.has-form) a:not(.button) { color: #EB6005; background: none;  }
+	.top-bar-section ul li:hover:not(.has-form) > a {color: #005DA5; background: none;}
+	
 	a:hover {color: #337DB7;}
 	a:active {color: #337DB7;}
-
-
-	.full{ background: none!important;}
 	
-	
-	.modBlogPost.big .info, blockquote, blockquote p {color: #999994; /*grey on white*/	}
+.modBlogPost.big .info, blockquote, blockquote p {color: #999994; /*grey on white*/	}
 	
 	
  /*ELEMENTS*/
