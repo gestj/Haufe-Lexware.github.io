@@ -3914,13 +3914,17 @@ body {
 	
 	
 	body {font-family: 'HaufeMerriweather';     font-style: normal;
-    font-weight: normal; }
+    font-weight: normal; color: #333;}
 	
 	h1, h2, h3, h4, h5, h6 {font-family: 'HaufeMerriweatherSans';     font-style: normal;
     font-weight: bold;}
 	
 	.button, .button.boxed  {font-family: 'HaufeMerriweatherSans';     font-style: normal;
     font-weight: normal;}
+	
+	a {color: #EB6005;}
+	a:hover {color: #EF8037;}
+	a:active {color: #EF8037;}
 
  /*ELEMENTS*/
 
