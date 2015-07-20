@@ -4,6 +4,8 @@
 - name: About
   path: about.html
   section_id: about
+- name: Api Styleguide
+  path: /api-style-guide/
 - name: Services
   path: services.html
   section_id: services
