@@ -20,13 +20,19 @@ resources:
   <div class='four spacing'></div>
 </div>
 
-{% for resource in page.resources %}
-  <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
-    <div class='icon-text-simple'>
-      <i class='fa fa-{{resource.icon}}'></i>
-      <a href='{{resource.url}}'>{{resource.title}}</a>
-      <p>{{resource.desc}}</p>
-    </div>
-    <div class='two spacing'></div>
+<div class='full'>
+  <div class='row'>
+    {% for resource in page.resources %}
+      <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+        <div class='icon-text-simple'>
+          <i class='fa fa-{{resource.icon}}'></i>
+          <a href='{{resource.url}}'>{{resource.title}}</a>
+          <p>{{resource.desc}}</p>
+        </div>
+        <div class='two spacing'></div>
+      </div>
+    {% endfor %}
+    <div class='spacing'/>
   </div>
-{% endfor %}
+</div>
+
