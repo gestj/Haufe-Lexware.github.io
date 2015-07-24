@@ -7,7 +7,4 @@
 - name: About
   path: about.html
   section_id: about
-- name: Test
-  path: blog/
-  section_id: blog
 
