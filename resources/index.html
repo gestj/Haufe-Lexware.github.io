@@ -1,0 +1,32 @@
+---
+layout: default
+title: Resources
+section_id: resources
+
+resources:
+  - icon: cogs
+    title: Api Style Guide
+    desc: Acusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+    url: http://haufe-lexware.github.io/api-style-guide/
+
+---
+
+<div class='full parallax' style='background-image: url(./images/HG/3.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Resources" tagline="Get to know what we do" color="#fff" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+{% for resource in page.resources %}
+  <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+    <div class='icon-text-simple'>
+      <i class='fa fa-{{resource.icon}}'></i>
+      <a href='{{resource.url}}'>{{resource.title}}</a>
+      <p>{{resource.desc}}</p>
+    </div>
+    <div class='two spacing'></div>
+  </div>
+{% endfor %}
