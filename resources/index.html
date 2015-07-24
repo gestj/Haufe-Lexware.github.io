@@ -11,6 +11,14 @@ resources:
 
 ---
 
+<div class='full parallax' style='background-image: url(images/HG/3.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Resources" tagline="Get to know what we do" color="#fff" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
 
 {% for resource in page.resources %}
   <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
