@@ -3820,7 +3820,7 @@ body {
 }
 
 
-/*DESIGN OFFICE - Haufe Group Style - Oriented @ goodlooking.haufe.de*/
+/*DESIGN OFFICE - Haufe Group Style /
 
 /*FONTS*/
 
@@ -3925,10 +3925,8 @@ body {
 	.button, .button.boxed, nav, .top-bar-section ul li > a, .info  {font-family: 'HaufeMerriweatherSans', sans-serif;     font-style: normal;
     font-weight: normal;}
 	
-	a, .modBlogPost.big h3 a:hover, .pager a, .modIconText .icon-text-circle:hover i  {color: #005DA5; /*haufe blue*/}
-	.top-bar-section ul li > a {color: #33332E /*black*/}
-	.top-bar-section li.active:not(.has-form) a:not(.button) { color: #EB6005; background: none;  }
-	.top-bar-section ul li:hover:not(.has-form) > a, .top-bar-section li.active:not(.has-form) a:not(.button):hover {color: #005DA5; background: none;}
+	a, .modBlogPost.big h3 a:hover, .pager a, .modIconText .icon-text-circle:hover i  {color: #005DA5;/*HaufeBlau*/}
+
 	
 	a:hover, .pager a:hover {color: #337DB7;}
 	a:active {color: #337DB7;}
@@ -3936,35 +3934,44 @@ body {
 .modBlogPost.big .info, blockquote, blockquote p {color: #999994; /*grey on white*/	}
 	
 	
+	
+	
  /*ELEMENTS*/
 
 .button {
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  text-transform: none;
+  letter-spacing: 0.5px;
   color: #fff;
-  background: #EB6005;
+  background: #005DA5/*HaufeBlau*/;
   border:none;
 }
 
 .button:hover {
-  background-color: #EF8037;
+  background-color: #337eb7/*HaufeBlauHover*/;
 }
 
 .button:active {
-background-color: #EF8037;}
+background-color: #005DA5/*HaufeBlau*/;}
 
 .button.boxed {
-  color: #fff;
-  border: 2px solid #EB6005;
+  color: #005DA5;
+  border: 2px solid #005DA5;/*HaufeBlau*/
   background: none;
 }
 
 .button.boxed:hover {
-  color: #fff;
-  border: 2px solid #EF8037;
+  color: #337eb7;
+  border: 2px solid #337eb7;/*HaufeBlauHover*/
   background: none;
 }
 
 p { line-height: 1.8; margin-bottom: 1.8rem;}
 
+/*MENU*/
+
+
+	.top-bar-section ul li > a {color: #33332E /*black*/;}
+	.top-bar-section li.active:not(.has-form) a:not(.button) { color: #005DA5/*HaufeBlau*/; background: none;  }
+	.top-bar-section ul li:hover:not(.has-form) > a, .top-bar-section li.active:not(.has-form) a:not(.button):hover {color: #005DA5/*HaufeBlau*/; background: none;}
+	@media only screen and (min-width: 960px) {.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {background: #005DA5/*HaufeBlau*/; color: #FFF; } .top-bar-section li:not(.has-form) a:not(.button):hover {background: #f9f9f9; color: #33332E; }
 
