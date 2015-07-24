@@ -3931,9 +3931,15 @@ body {
 	a:hover, .pager a:hover {color: #337DB7;}
 	a:active {color: #337DB7;}
 	
+	.links a {color: #005DA5;/*HaufeBlau*/}
+	.links a:hover {color: #33332E;}
+	
+	
 .modBlogPost.big .info, blockquote, blockquote p {color: #999994; /*grey on white*/	}
 	
-	
+p { line-height: 1.8; margin-bottom: 1.8rem;}	
+
+
 	
 	
  /*ELEMENTS*/
@@ -3965,13 +3971,21 @@ background-color: #005DA5/*HaufeBlau*/;}
   background: none;
 }
 
-p { line-height: 1.8; margin-bottom: 1.8rem;}
+/*SLIDER*/
+.modDefaultSlider .sequence .title h2 {background-color: #33332E; padding: 0.8rem 1.5rem;}
+
 
 /*MENU*/
-
 
 	.top-bar-section ul li > a {color: #33332E /*black*/;}
 	.top-bar-section li.active:not(.has-form) a:not(.button) { color: #005DA5/*HaufeBlau*/; background: none;  }
 	.top-bar-section ul li:hover:not(.has-form) > a, .top-bar-section li.active:not(.has-form) a:not(.button):hover {color: #005DA5/*HaufeBlau*/; background: none;}
-	@media only screen and (min-width: 960px) {.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {background: #005DA5/*HaufeBlau*/; color: #FFF; } .top-bar-section li:not(.has-form) a:not(.button):hover {background: #f9f9f9; color: #33332E; }
+	@media only screen and (min-width: 960px) {.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {background: #005DA5/*HaufeBlau*/; color: #FFF; }  
+	.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {background: #f9f9f9; color: #33332E; } 
+	
 
+	}
+
+/*FOOTER*/
+#footer {background: #33332E; color:#F5F5F5;}
+#footer ul.socials a:hover i {background: #005DA5; color: #FFF;}
