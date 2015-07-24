@@ -1,33 +1,23 @@
 ---
-layout: blog
+layout: default
 title: Resources
 section_id: resources
+
+resources:
+   - icon: cogs
+    title: Web Development
+    desc: Acusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+    url: http://haufe-lexware.github.io/api-style-guide/
 ---
 
 
-{% for post in paginator.posts %}
-  <div class='big mod modBlogPost'>
-    <div class='images'>
-      {% for image in post.images %}
-        <div class='image'><img alt="" src="{{site.url}}/{{image}}" /></div>
-      {% endfor %}
+{% for resource in page.resources %}
+  <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+    <div class='icon-text-simple'>
+      <i class='fa fa-{{resource.icon}}'></i>
+      <a href='{{resource.url}}'>{{resource.title}}</a>
+      <p>{{resource.desc}}</p>
     </div>
-    <div class='content'>
-      <p class='info'>
-        <span>{{post.date | date: "%B %d, %Y" }}</span>
-        /
-        <span>
-          by {{post.author}}
-        </span>
-        /
-        <span>
-          <a href="#">4 comments</a>
-        </span>
-      </p>
-      <h3><a href="{{post.url}}">{{post.title}}</a></h3>
-      <p>{{post.excerpt}}</p>
-      <div class='spacing'></div>
-      <a class="button small" href="{{post.url}}">Read more</a>
-    </div>
+    <div class='two spacing'></div>
   </div>
 {% endfor %}
